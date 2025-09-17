@@ -7,21 +7,21 @@ Welcome to Day 0 of my 7-day System Design beginner journey! Today, we’re cove
 System design is planning how a software system works behind the scenes.
 It’s about making sure the system:
 
-Handles growth (scalable)
+•	Handles growth (scalable)
 
-Keeps running even when things fail (reliable)
+•	Keeps running even when things fail (reliable)
 
-Performs well under load (efficient)
+•	Performs well under load (efficient)
 
-Think of it as designing the invisible architecture that makes your favorite apps work seamlessly.
+•	Think of it as designing the invisible architecture that makes your favorite apps work seamlessly.
 
 2. How Do We Start Designing a System?
 
 Every design starts by understanding the requirements:
 
-Functional requirements: what the system should do (e.g., users can place orders)
+•	Functional requirements: what the system should do (e.g., users can place orders)
 
-Non-functional requirements: how well it should do it (e.g., handle millions of users, respond quickly)
+•	Non-functional requirements: how well it should do it (e.g., handle millions of users, respond quickly)
 
 These requirements set the foundation for every design decision.
 
@@ -29,23 +29,23 @@ These requirements set the foundation for every design decision.
 
 A system isn’t just code. Its building blocks include:
 
-Clients: web or mobile users sending requests
+•	Clients: web or mobile users sending requests
 
-API Gateway / Web Servers: first point of entry for requests
+•	API Gateway / Web Servers: first point of entry for requests
 
-Application Servers: handle business logic
+•	Application Servers: handle business logic
 
-Database Layer: stores and retrieves data (SQL & NoSQL)
+•	Database Layer: stores and retrieves data (SQL & NoSQL)
 
-Cache: speeds up frequent queries (Redis, Memcached)
+•	Cache: speeds up frequent queries (Redis, Memcached)
 
-Load Balancers: distribute traffic across servers
+•	Load Balancers: distribute traffic across servers
 
-Message Queues / Streaming: handle async communication (Kafka, RabbitMQ)
+•	Message Queues / Streaming: handle async communication (Kafka, RabbitMQ)
 
-CDN: deliver static content fast globally (Cloudflare, Akamai)
+•	CDN: deliver static content fast globally (Cloudflare, Akamai)
 
-Monitoring & Logging: track performance and detect issues
+•	Monitoring & Logging: track performance and detect issues
 
 4. High-Level Design (HLD)
 
@@ -73,15 +73,15 @@ It’s about how each piece works and connects to others.
 
 A step-by-step method makes it simple:
 
-Clarify the problem
+•	Clarify the problem
 
-Estimate scale and load
+•	Estimate scale and load
 
-Design the system (HLD → LLD)
+•	Design the system (HLD → LLD)
 
-Refine and consider trade-offs
+•	Refine and consider trade-offs
 
-Review for scalability, reliability, and performance
+•	Review for scalability, reliability, and performance
 
 ✅ In short:
 

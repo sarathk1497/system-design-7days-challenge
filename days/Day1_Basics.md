@@ -1,94 +1,91 @@
-💻 Coding keeps you busy. System design keeps you unstoppable. ⚡
+# 💻 **Coding keeps you busy. System design keeps you unstoppable.** ⚡
 
-Welcome to Day 0 of my 7-day System Design beginner journey! Today, we’re covering the fundamentals — what system design is, its core components, requirements, and the approach.
+Welcome to **Day 0** of my **7-day System Design beginner journey**!  
+Today, we’re covering the **fundamentals** — what system design is, its **core components**, **requirements**, and the **approach**.
 
-1. What is System Design?
+---
 
-System design is planning how a software system works behind the scenes.
-It’s about making sure the system:
+## 1️⃣ **What is System Design?**
 
-•	Handles growth (scalable)
+System design is **planning how a software system works behind the scenes**.  
+It ensures the system:  
 
-•	Keeps running even when things fail (reliable)
+- **Handles growth** (scalable)  
+- **Keeps running even when things fail** (reliable)  
+- **Performs well under load** (efficient)  
 
-•	Performs well under load (efficient)
+Think of it as **designing the invisible architecture** that makes your favorite apps work seamlessly.
 
-•	Think of it as designing the invisible architecture that makes your favorite apps work seamlessly.
+---
 
-2. How Do We Start Designing a System?
+## 2️⃣ **How Do We Start Designing a System?**
 
-Every design starts by understanding the requirements:
+Every design starts by understanding the **requirements**:
 
-•	Functional requirements: what the system should do (e.g., users can place orders)
+- **Functional requirements**: *what the system should do*  
+  *(e.g., users can place orders)*  
+- **Non-functional requirements**: *how well it should do it*  
+  *(e.g., handle millions of users, respond quickly)*  
 
-•	Non-functional requirements: how well it should do it (e.g., handle millions of users, respond quickly)
+These requirements form the **foundation for every design decision**.
 
-These requirements set the foundation for every design decision.
+---
 
-3. What Do We Need to Design a System?
+## 3️⃣ **What Do We Need to Design a System?**
 
-A system isn’t just code. Its building blocks include:
+A system isn’t just code. Its **building blocks** include:
 
-•	Clients: web or mobile users sending requests
+- **Clients**: web or mobile users sending requests  
+- **API Gateway / Web Servers**: first point of entry for requests  
+- **Application Servers**: handle business logic  
+- **Database Layer**: stores and retrieves data (**SQL & NoSQL**)  
+- **Cache**: speeds up frequent queries (**Redis, Memcached**)  
+- **Load Balancers**: distribute traffic across servers  
+- **Message Queues / Streaming**: handle async communication (**Kafka, RabbitMQ**)  
+- **CDN**: deliver static content fast globally (**Cloudflare, Akamai**)  
+- **Monitoring & Logging**: track performance and detect issues  
 
-•	API Gateway / Web Servers: first point of entry for requests
+---
 
-•	Application Servers: handle business logic
+## 4️⃣ **High-Level Design (HLD)**
 
-•	Database Layer: stores and retrieves data (SQL & NoSQL)
+HLD is the **big picture**:  
 
-•	Cache: speeds up frequent queries (Redis, Memcached)
+- Shows **main components** of the system  
+- Shows **how components communicate**  
+- Includes **storage and service choices**  
 
-•	Load Balancers: distribute traffic across servers
+It’s like **drawing the map of the system before building it**.
 
-•	Message Queues / Streaming: handle async communication (Kafka, RabbitMQ)
+---
 
-•	CDN: deliver static content fast globally (Cloudflare, Akamai)
+## 5️⃣ **Low-Level Design (LLD)**
 
-•	Monitoring & Logging: track performance and detect issues
+LLD dives into the **details**:
 
-4. High-Level Design (HLD)
+- **Class diagrams and methods**  
+- **Database schema and relationships**  
+- **APIs and service contracts**  
 
-HLD is the big picture:
+It’s about **how each piece works and connects to others**.
 
-Shows main components of the system
+---
 
-How these components communicate
+## 6️⃣ **How to Approach a System Design Question**
 
-Storage and service choices
-It’s like drawing the map of the system before building it.
+Step-by-step approach:
 
-5. Low-Level Design (LLD)
+- **Clarify the problem**  
+- **Estimate scale and load**  
+- **Design the system (HLD → LLD)**  
+- **Refine and consider trade-offs**  
+- **Review for scalability, reliability, and performance**  
 
-LLD dives into the details:
+---
 
-Class diagrams and methods
+✅ **In short**:
 
-Database schema and relationships
-
-APIs and service contracts
-It’s about how each piece works and connects to others.
-
-6. How to Approach a System Design Question
-
-A step-by-step method makes it simple:
-
-•	Clarify the problem
-
-•	Estimate scale and load
-
-•	Design the system (HLD → LLD)
-
-•	Refine and consider trade-offs
-
-•	Review for scalability, reliability, and performance
-
-✅ In short:
-
-Functional requirements = what the system does
-
-Non-functional requirements = how well it does it
-
-HLD = big picture architecture
-
-LLD = detailed design
+- **Functional requirements** = *what the system does*  
+- **Non-functional requirements** = *how well it does it*  
+- **HLD** = *big picture architecture*  
+- **LLD** = *detailed design*

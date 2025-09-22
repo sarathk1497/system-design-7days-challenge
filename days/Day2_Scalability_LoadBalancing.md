@@ -1,4 +1,4 @@
-# ⚡ Day 1 - Non-Functional Requirements: Scalability & Load Balancing
+# ⚡ Day 2 - Non-Functional Requirements: Scalability & Load Balancing
 
 💻 Coding solves problems.  
 ⚡ System design ensures those problems don’t break the system at scale.
